@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda sobre Cibersegurança</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Azul piscina bem claro - do quiz */
+            color: #212121; /* Cor de texto principal - do quiz */
+            text-align: left; /* Alinhar texto à esquerda para leitura */
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff; /* Fundo branco para o conteúdo */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        h1, h2, h3 {
+            color: #00796b; /* Um tom de verde/azul escuro para títulos */
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #b2dfdb; /* Linha sutil abaixo do h2 */
+            padding-bottom: 5px;
+        }
+        p, li {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .quiz-link-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .quiz-link-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff5722; /* Laranja forte - do quiz */
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .quiz-link-button:hover {
+            background-color: #e64a19; /* Laranja mais escuro - do quiz */
+            transform: translateY(-2px);
+        }
+        .references {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .references h3 {
+            text-align: left;
+            color: #004d40; /* Tom mais escuro para o título de referências */
+        }
+        /* Estilos para o botão de alternar tema, se for mantido globalmente */
+        #theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #ff4081; /* Rosa vibrante - do quiz */
+            color: white;
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 1000; /* Para ficar sobre outros elementos */
+        }
+        body.dark-mode #theme-toggle {
+            background-color: #333;
+        }
+        body.dark-mode {
+            background-color: #0f0f0f; 
+            color: #eee;
+        }
+        body.dark-mode .container {
+            background-color: #1c1c1c;
+            color: #eee;
+        }
+        body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+            color: #80cbc4; /* Um tom claro de verde/azul para títulos no modo escuro */
+        }
+        body.dark-mode h2 {
+            border-bottom: 2px solid #4db6ac;
+        }
+        body.dark-mode .references {
+            color: #bbb;
+        }
+        body.dark-mode .references h3 {
+            color: #80cbc4;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="theme-toggle">Alternar Tema</button>
+
+    <div class="container">
+        <h1>Guia Introdutório à Cibersegurança</h1>
+
+        <p>Bem-vindo ao nosso guia de cibersegurança! O objetivo deste material é fornecer uma visão geral sobre os conceitos fundamentais da segurança digital, ajudando você a compreender os riscos e as melhores práticas para se proteger no mundo online. Após a leitura, teste seus conhecimentos com nosso quiz!</p>
+
+        <h2>Entendendo os Conceitos Básicos de Cybersegurança</h2>
+        <p>Cybersegurança, ou segurança cibernética, é o conjunto de práticas, tecnologias e processos destinados a proteger redes, computadores, programas e dados contra ataques, danos ou acesso não autorizado. Compreender os fundamentos é o primeiro passo para uma navegação mais segura.</p>
+        <ul>
+            <li><strong>Ameaças Cibernéticas Comuns:</strong> Existem diversos tipos de ameaças, como: 
+                <ul>
+                    <li><strong>Malware:</strong> Software malicioso que pode danificar seu sistema ou roubar informações (vírus, worms, trojans, ransomware, spyware).</li>
+                    <li><strong>Phishing:</strong> Tentativas de enganar usuários para que forneçam informações confidenciais (senhas, dados bancários) através de e-mails, mensagens ou sites falsos.</li>
+                    <li><strong>Ataques de Negação de Serviço (DoS/DDoS):</strong> Tentativas de tornar um serviço online indisponível sobrecarregando-o com tráfego de múltiplas fontes.</li>
+                </ul>
+            </li>
+            <li><strong>Técnicas de Hacking:</strong> São os métodos utilizados por invasores para explorar vulnerabilidades em sistemas e obter acesso não autorizado.</li>
+            <li><strong>Medidas de Segurança Essenciais:</strong> Para se proteger, algumas medidas são cruciais:
+                <ul>
+                    <li><strong>Firewalls:</strong> Barreiras que controlam o tráfego de rede, bloqueando acessos não autorizados.</li>
+                    <li><strong>Antivírus:</strong> Softwares que detectam, previnem e removem malwares.</li>
+                    <li><strong>Criptografia:</strong> Processo de codificar informações para que apenas pessoas autorizadas possam lê-las.</li>
+                </ul>
+            </li>
+            <li><strong>Proteção de Dados Pessoais e Sensíveis:</strong> A conscientização sobre quais dados são compartilhados e como são protegidos é vital.</li>
+            <li><strong>Regulamentações e Leis:</strong> Existem leis, como a LGPD no Brasil, que estabelecem regras para a coleta, uso e tratamento de dados pessoais.</li>
+        </ul>
+
+        <h2>Práticas Recomendadas para Manter-se Seguro Online</h2>
+        <p>Adotar hábitos seguros no dia a dia é fundamental para minimizar os riscos de incidentes de segurança.</p>
+        <ul>
+            <li><strong>Senhas Fortes e Únicas:</strong> Crie senhas complexas (letras maiúsculas e minúsculas, números, símbolos) e diferentes para cada conta. Considere usar um gerenciador de senhas.</li>
+            <li><strong>Autenticação de Dois Fatores (2FA):</strong> Adicione uma camada extra de segurança ao login, exigindo uma segunda forma de verificação além da senha.</li>
+            <li><strong>Atualizações de Software:</strong> Mantenha seu sistema operacional, navegador e outros aplicativos sempre atualizados para corrigir vulnerabilidades conhecidas.</li>
+            <li><strong>Cuidado com Links e Anexos:</strong> Não clique em links suspeitos nem baixe anexos de remetentes desconhecidos ou não solicitados. Verifique sempre a origem.</li>
+            <li><strong>Uso de Antivírus Confiável:</strong> Instale e mantenha atualizado um bom software antivírus.</li>
+            <li><strong>Backups Regulares:</strong> Faça cópias de segurança dos seus dados importantes regularmente.</li>
+            <li><strong>Redes Wi-Fi Seguras:</strong> Evite usar redes Wi-Fi públicas para transações sensíveis. Se precisar, utilize uma VPN (Rede Privada Virtual) para criptografar sua conexão.</li>
+            <li><strong>Consciência sobre Engenharia Social:</strong> Esteja atento a táticas de manipulação que visam obter informações confidenciais.</li>
+        </ul>
+        
+        <h2>A Importância da Ética no Mundo Digital</h2>
+        <p>No contexto da cibersegurança, a ética é crucial. Profissionais conhecidos como "ethical hackers" (hackers éticos) utilizam suas habilidades para identificar e corrigir vulnerabilidades em sistemas, sempre com autorização e com o objetivo de fortalecer a segurança, e não de causar danos.</p>
+
+        <div class="quiz-link-container">
+            <a href="quiz.html" class="quiz-link-button">Iniciar Quiz de Cibersegurança</a>
+        </div>
+
+        <div class="references">
+            <h3>Referências</h3>
+            <p>O conteúdo desta página foi elaborado com base em informações de fontes especializadas em cibersegurança, incluindo um resumo adaptado de "Lições fundamentais sobre cybersegurança para iniciantes" disponível em <a href="https://blog.unodata.com.br/cyberseguran%C3%A7a-para-iniciantes" target="_blank">blog.unodata.com.br</a> (Acesso em 08 de maio de 2025).</p>
+        </div>
+    </div>
+
+    <script>
+        // Script para alternar tema (claro/escuro)
+        const themeToggleButton = document.getElementById('theme-toggle');
+        
+        // Verifica se o tema escuro está ativado no localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeToggleButton.textContent = "Tema Claro";
+        } else {
+            themeToggleButton.textContent = "Tema Escuro";
+        }
+
+        themeToggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            // Salva a preferência do usuário no localStorage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                themeToggleButton.textContent = "Tema Claro";
+            } else {
+                localStorage.removeItem('theme');
+                themeToggleButton.textContent = "Tema Escuro";
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modo Administrador - Quiz de Cibersegurança</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="imagem.avif" type="image/png">
+</head>
+<body>
+
+  <!-- TELA DE LOGIN DO ADMINISTRADOR -->
+  <div id="admin-login-screen">
+    <h2>Acesso Restrito - Administrador</h2>
+    <input type="password" id="admin-login-password" placeholder="Senha de Administrador">
+    <button id="admin-login-button">Entrar</button>
+    <p><a href="index.html">Voltar ao site principal</a></p>
+  </div>
+
+  <!-- PAINEL ADMINISTRADOR -->
+  <div id="admin-panel" class="hidden">
+    <h2>Adicionar Nova Pergunta</h2>
+    <input type="text" id="new-question" placeholder="Digite a pergunta">
+    <input type="text" id="optionA" placeholder="Opção A">
+    <input type="text" id="optionB" placeholder="Opção B">
+    <input type="text" id="optionC" placeholder="Opção C">
+    <input type="text" id="optionD" placeholder="Opção D">
+    <select id="correct-answer">
+      <option value="0">Correta: A</option>
+      <option value="1">Correta: B</option>
+      <option value="2">Correta: C</option>
+      <option value="3">Correta: D</option>
+    </select>
+    <label for="admin-difficulty-select">Selecione a dificuldade da nova pergunta:</label>
+    <select id="admin-difficulty-select">
+      <option value="fácil">Fácil</option>
+      <option value="médio">Médio</option>
+      <option value="difícil">Difícil</option>
+    </select>
+    <button id="save-question">Salvar Pergunta</button>
+    <button id="exit-admin">Sair do Modo Administrador</button>
+  </div>
+
+  <button id="theme-toggle">Alternar Tema</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

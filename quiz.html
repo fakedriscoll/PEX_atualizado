@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Cibersegurança</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="imagem.avif" type="image/png">
+
+</head>
+<body>
+
+  <!-- TELA DE LOGIN -->
+<div id="login-screen">
+  <h2>Bem-vindo ao Quiz de Cibersegurança</h2>
+  <input type="text" id="login-username" placeholder="User">
+  <input type="password" id="login-password" placeholder="password">
+  <button id="login-button">Entrar</button>
+  <button id="admin-mode-button">Modo Administrador</button>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz" class="hidden">
+  <h2 id="question">Pergunta</h2>
+  <div id="answers"></div>
+  <button id="next-button" class="hidden">Próxima</button>
+</div>
+
+<!-- RESULTADO -->
+<div id="score-container" class="hidden">
+  <h2>Resultado</h2>
+  <p id="score"></p>
+  <button id="restart-button">Recomeçar Quiz</button>
+</div>
+
+<!-- PAINEL ADMINISTRADOR -->
+<div id="admin-panel" class="hidden">
+  <h2>Adicionar Nova Pergunta</h2>
+  <input type="text" id="new-question" placeholder="Digite a pergunta">
+  <input type="text" id="optionA" placeholder="Opção A">
+  <input type="text" id="optionB" placeholder="Opção B">
+  <input type="text" id="optionC" placeholder="Opção C">
+  <input type="text" id="optionD" placeholder="Opção D">
+  <select id="correct-answer">
+    <option value="0">Correta: A</option>
+    <option value="1">Correta: B</option>
+    <option value="2">Correta: C</option>
+    <option value="3">Correta: D</option>
+  </select>
+  <button id="save-question">Salvar Pergunta</button>
+  <button id="exit-admin">Sair do Modo Administrador</button>
+</div>
+
+<label for="difficulty-select">Selecione a dificuldade:</label>
+    <select id="difficulty-select">
+      <option value="todas">Todas</option>
+      <option value="fácil">Fácil</option>
+      <option value="médio">Médio</option>
+      <option value="difícil">Difícil</option>
+    </select>
+
+    <button id="theme-toggle">Alternar Tema</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
